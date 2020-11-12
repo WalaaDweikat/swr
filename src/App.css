@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 .App {
+  font-family: 'Itim', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* <---- NEW    */
+  margin-top: 40vh; 
+}
+
+
+.display{
+  width:100%;
+  font-size:4.7rem;
+  font-family: 'Itim', cursive;
   text-align: center;
+  margin:0 auto;
+}
+button {
+  font-size: 1.1rem;
+  font-family: 'Itim', cursive;
+  border-radius: 20px;
+  width:5em;
+  height: 1.5em;
+  background-color: rgb(14, 53, 126);
+  color: white;
+  margin: 10px;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  font-size: 1rem;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +60,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .display {
+     font-size:15vw ;
+   }
+   button{
+    font-size: 3vw;
+    width:50%;
+    height:10%;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+ }
